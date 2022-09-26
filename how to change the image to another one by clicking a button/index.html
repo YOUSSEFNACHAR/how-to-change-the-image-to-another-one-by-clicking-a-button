@@ -1,0 +1,42 @@
+<!doctype html>
+	<html>
+	<head>
+		<title>how to change the image to another one by clicking a button</title>
+		<style>
+			.butn1 {
+				color: darkred;
+				background-color: black;
+				position: relative;
+				top: 150px;
+				right: 250px;
+				font-size: 35px;
+				border-radius: 15px;
+				cursor: pointer;
+			}
+			.undo {
+				color: blue;
+				background-color: black;
+				position: relative;
+				font-size: 35px;
+				border-radius: 15px;
+				cursor: pointer;
+				top: 150px;
+				right: ;
+			}
+		</style>
+	</head>
+	<body>
+		<body bgcolor="green">
+			<img id="img" src="./img1.jpg">
+			<button type="button" class="butn1" id="img" onclick="change()">Change</button>
+			<script>
+				function change() {
+					document.getElementById('img').setAttribute("src","img2.jpg");
+				}
+				function undo() {
+					document.getElementById('img').setAttribute("src","img1.jpg");
+				}
+			</script>
+			<button class="undo" type="button" id="img" onclick="undo()">Undo</button>
+
+			<marquee>THANKS FOR WATCHING</marquee>
